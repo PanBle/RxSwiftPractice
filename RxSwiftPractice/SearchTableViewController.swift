@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchTabkeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
      @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -48,4 +48,3 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
 }
-

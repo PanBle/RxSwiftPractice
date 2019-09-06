@@ -3,6 +3,7 @@
 
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
 target 'RxSwiftPractice' do
   # Comment the next line if you don't want to use dynamic frameworks
