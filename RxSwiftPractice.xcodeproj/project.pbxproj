@@ -22,6 +22,9 @@
 		BE80944F23221C740000E9FA /* RxSwiftPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80944E23221C740000E9FA /* RxSwiftPracticeTests.swift */; };
 		BE80945A23221C740000E9FA /* RxSwiftPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80945923221C740000E9FA /* RxSwiftPracticeUITests.swift */; };
 		BE80946823222AFC0000E9FA /* UseChamelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80946723222AFC0000E9FA /* UseChamelonViewController.swift */; };
+		BE902808233890D1001BCCF1 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE902807233890D1001BCCF1 /* RepositoriesViewController.swift */; };
+		BE90280A2338945F001BCCF1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9028092338945F001BCCF1 /* Repository.swift */; };
+		BE90280C23389682001BCCF1 /* RepositoryNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE90280B23389682001BCCF1 /* RepositoryNetworkModel.swift */; };
 		F9CBA97E9A2725A67D583DEA /* Pods_RxSwiftPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5B807AACC76285250EC625 /* Pods_RxSwiftPracticeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		BE80945923221C740000E9FA /* RxSwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		BE80945B23221C740000E9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE80946723222AFC0000E9FA /* UseChamelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseChamelonViewController.swift; sourceTree = "<group>"; };
+		BE902807233890D1001BCCF1 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		BE9028092338945F001BCCF1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BE90280B23389682001BCCF1 /* RepositoryNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryNetworkModel.swift; sourceTree = "<group>"; };
 		D17F1D65BDEC6AA979E04CD6 /* Pods-RxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		DAE66EC78B12AC9404F4F680 /* Pods-RxSwiftPracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftPracticeUITests/Pods-RxSwiftPracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3777687B214BCAE5B4AF585 /* Pods-RxSwiftPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPracticeTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftPracticeTests/Pods-RxSwiftPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,14 +160,12 @@
 		BE80943823221C730000E9FA /* RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				BE9028062338902E001BCCF1 /* MultiThreading */,
 				BE1C5577232245FB00F7B6ED /* Networking */,
 				BE1C5576232245B200F7B6ED /* SearchTableView */,
 				BE1C55752322457C00F7B6ED /* UseChamelon(observable) */,
-				BE80943D23221C730000E9FA /* Main.storyboard */,
+				BE9028052338843F001BCCF1 /* Base.lproj */,
 				BE80944023221C740000E9FA /* Assets.xcassets */,
-				BE80943923221C730000E9FA /* AppDelegate.swift */,
-				BE80944223221C740000E9FA /* LaunchScreen.storyboard */,
-				BE80944523221C740000E9FA /* Info.plist */,
 			);
 			path = RxSwiftPractice;
 			sourceTree = "<group>";
@@ -182,6 +186,27 @@
 				BE80945B23221C740000E9FA /* Info.plist */,
 			);
 			path = RxSwiftPracticeUITests;
+			sourceTree = "<group>";
+		};
+		BE9028052338843F001BCCF1 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BE80944223221C740000E9FA /* LaunchScreen.storyboard */,
+				BE80943923221C730000E9FA /* AppDelegate.swift */,
+				BE80944523221C740000E9FA /* Info.plist */,
+				BE80943D23221C730000E9FA /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			sourceTree = "<group>";
+		};
+		BE9028062338902E001BCCF1 /* MultiThreading */ = {
+			isa = PBXGroup;
+			children = (
+				BE902807233890D1001BCCF1 /* RepositoriesViewController.swift */,
+				BE9028092338945F001BCCF1 /* Repository.swift */,
+				BE90280B23389682001BCCF1 /* RepositoryNetworkModel.swift */,
+			);
+			name = MultiThreading;
 			sourceTree = "<group>";
 		};
 		D9B2E94B21040794799AAE78 /* Pods */ = {
@@ -432,8 +457,11 @@
 				BE80943C23221C730000E9FA /* SearchTableViewController.swift in Sources */,
 				BE1C557B23224B6F00F7B6ED /* GithubEndpoint.swift in Sources */,
 				BE80946823222AFC0000E9FA /* UseChamelonViewController.swift in Sources */,
+				BE902808233890D1001BCCF1 /* RepositoriesViewController.swift in Sources */,
 				BE1C557923224A4900F7B6ED /* IssueListViewController.swift in Sources */,
 				BE1C55742322346B00F7B6ED /* CircleviewModel.swift in Sources */,
+				BE90280A2338945F001BCCF1 /* Repository.swift in Sources */,
+				BE90280C23389682001BCCF1 /* RepositoryNetworkModel.swift in Sources */,
 				BE5965752322574B005F38BF /* RepositoryStruct.swift in Sources */,
 				BE80943A23221C730000E9FA /* AppDelegate.swift in Sources */,
 			);

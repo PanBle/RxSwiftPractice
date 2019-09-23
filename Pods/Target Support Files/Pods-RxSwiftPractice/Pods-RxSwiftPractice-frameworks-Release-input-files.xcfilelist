@@ -4,7 +4,9 @@ ${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework
 ${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
 ${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
 ${BUILT_PRODUCTS_DIR}/Result/Result.framework
+${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework
 ${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
 ${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

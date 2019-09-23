@@ -2,7 +2,8 @@
 # platform :ios, '9.0'
 
 pod 'RxOptional'
-pod 'RxCocoa'
+pod 'RxAlamofire/RxCocoa'
+pod 'ObjectMapper'
 pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 pod 'Moya-ModelMapper/RxSwift'
 
