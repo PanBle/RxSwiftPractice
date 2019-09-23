@@ -10,6 +10,10 @@
 		135E32BAC030BA963A04271B /* Pods_RxSwiftPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627BBC6673612721074D8AB1 /* Pods_RxSwiftPractice.framework */; };
 		4AC8CDAB3607218A3D268051 /* Pods_RxSwiftPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B1E0EF55CA8DA092F2AE78 /* Pods_RxSwiftPracticeTests.framework */; };
 		BE1C55742322346B00F7B6ED /* CircleviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C55732322346B00F7B6ED /* CircleviewModel.swift */; };
+		BE1C557923224A4900F7B6ED /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C557823224A4900F7B6ED /* IssueListViewController.swift */; };
+		BE1C557B23224B6F00F7B6ED /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C557A23224B6F00F7B6ED /* GithubEndpoint.swift */; };
+		BE5965752322574B005F38BF /* RepositoryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5965742322574B005F38BF /* RepositoryStruct.swift */; };
+		BE5965772322587A005F38BF /* IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5965762322587A005F38BF /* IssueTrackerModel.swift */; };
 		BE80943A23221C730000E9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80943923221C730000E9FA /* AppDelegate.swift */; };
 		BE80943C23221C730000E9FA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80943B23221C730000E9FA /* SearchTableViewController.swift */; };
 		BE80943F23221C730000E9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE80943D23221C730000E9FA /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 		6B5B807AACC76285250EC625 /* Pods_RxSwiftPracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftPracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9082D3C28B8AFC9197192E77 /* Pods-RxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		BE1C55732322346B00F7B6ED /* CircleviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleviewModel.swift; sourceTree = "<group>"; };
+		BE1C557823224A4900F7B6ED /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
+		BE1C557A23224B6F00F7B6ED /* GithubEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
+		BE5965742322574B005F38BF /* RepositoryStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryStruct.swift; sourceTree = "<group>"; };
+		BE5965762322587A005F38BF /* IssueTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTrackerModel.swift; sourceTree = "<group>"; };
 		BE80943623221C730000E9FA /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE80943923221C730000E9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE80943B23221C730000E9FA /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1C55752322457C00F7B6ED /* UseChamelon(observable) */ = {
+			isa = PBXGroup;
+			children = (
+				BE80946723222AFC0000E9FA /* UseChamelonViewController.swift */,
+				BE1C55732322346B00F7B6ED /* CircleviewModel.swift */,
+			);
+			name = "UseChamelon(observable)";
+			sourceTree = "<group>";
+		};
+		BE1C5576232245B200F7B6ED /* SearchTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BE80943B23221C730000E9FA /* SearchTableViewController.swift */,
+			);
+			path = SearchTableView;
+			sourceTree = "<group>";
+		};
+		BE1C5577232245FB00F7B6ED /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C557823224A4900F7B6ED /* IssueListViewController.swift */,
+				BE1C557A23224B6F00F7B6ED /* GithubEndpoint.swift */,
+				BE5965742322574B005F38BF /* RepositoryStruct.swift */,
+				BE5965762322587A005F38BF /* IssueTrackerModel.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		BE80942D23221C730000E9FA = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +154,12 @@
 		BE80943823221C730000E9FA /* RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
-				BE80943923221C730000E9FA /* AppDelegate.swift */,
-				BE80943B23221C730000E9FA /* SearchTableViewController.swift */,
-				BE1C55732322346B00F7B6ED /* CircleviewModel.swift */,
-				BE80946723222AFC0000E9FA /* UseChamelonViewController.swift */,
+				BE1C5577232245FB00F7B6ED /* Networking */,
+				BE1C5576232245B200F7B6ED /* SearchTableView */,
+				BE1C55752322457C00F7B6ED /* UseChamelon(observable) */,
 				BE80943D23221C730000E9FA /* Main.storyboard */,
 				BE80944023221C740000E9FA /* Assets.xcassets */,
+				BE80943923221C730000E9FA /* AppDelegate.swift */,
 				BE80944223221C740000E9FA /* LaunchScreen.storyboard */,
 				BE80944523221C740000E9FA /* Info.plist */,
 			);
@@ -392,9 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5965772322587A005F38BF /* IssueTrackerModel.swift in Sources */,
 				BE80943C23221C730000E9FA /* SearchTableViewController.swift in Sources */,
+				BE1C557B23224B6F00F7B6ED /* GithubEndpoint.swift in Sources */,
 				BE80946823222AFC0000E9FA /* UseChamelonViewController.swift in Sources */,
+				BE1C557923224A4900F7B6ED /* IssueListViewController.swift in Sources */,
 				BE1C55742322346B00F7B6ED /* CircleviewModel.swift in Sources */,
+				BE5965752322574B005F38BF /* RepositoryStruct.swift in Sources */,
 				BE80943A23221C730000E9FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

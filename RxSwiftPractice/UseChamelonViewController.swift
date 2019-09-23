@@ -30,7 +30,7 @@ class UseChamelonViewController: UIViewController {
         circleView.center = view.center
         
         let circleViewModel = CircleViewModel()
-        //circleView의 중장지점을 centerObservable에 bind하기
+        //circleView의 중앙지ㄴ점을 centerObservable에 bind하기
         circleView
         .rx.observe(CGPoint.self, "center")
         .bind(to: circleViewModel.centerVariable)
